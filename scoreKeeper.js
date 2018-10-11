@@ -31,7 +31,7 @@ p2Button.addEventListener("click", function(){
       gameOver = true;
       console.log("GAME OVER!");
     }
-    p2Display.textContent = p1Score;  //Display the score on the top
+    p2Display.textContent = p2Score;  //Display the score on the top
   }
 })
 
