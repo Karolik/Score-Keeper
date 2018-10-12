@@ -6,7 +6,7 @@ Score Keeper is a simple JavaScript application that allows users to register wh
 
 * [Instructions](#instructions)
 * [Prerequisites](#prerequisites)
-* [Languages used to build the game](#languages_used_to_build_the_game)
+* [Languages used to build the game](#languages-used-to-build-the-game)
 * [Contributing](#contributing)
 * [Authors](#authors)
 * [License](#license)
