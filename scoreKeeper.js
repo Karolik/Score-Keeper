@@ -1,4 +1,4 @@
-//Define variables
+// Define variables
 const p1Button = document.querySelector(".p1");
 const p2Button = document.querySelector(".p2");
 const resetButton = document.querySelector(".reset");
@@ -11,7 +11,7 @@ let p2Score = 0;
 let gameOver = false;
 let maxScore = 5;
 
-//Click event for player 1 button
+// Click event for player 1 button
 p1Button.addEventListener("click", function(){
   if(!gameOver){
     p1Score++;  //Increment the score
@@ -25,7 +25,7 @@ p1Button.addEventListener("click", function(){
   }
 })
 
-//Click event for player 2 button
+// Click event for player 2 button
 p2Button.addEventListener("click", function(){
   if(!gameOver){
     p2Score++;  //Increment the score
@@ -39,10 +39,10 @@ p2Button.addEventListener("click", function(){
   }
 })
 
-//Reset the game when click
+// Reset the game when click
 resetButton.addEventListener("click", reset)
 
-//Function to reset the game
+// Function to reset the game
 function reset(){
   p1Score = 0;
   p2Score = 0;
@@ -53,8 +53,9 @@ function reset(){
   gameOver = false;
 }
 
+// Change in the input field updates the winning score
 numInput.addEventListener("change", function(){
   winningScore.textContent = this.value;
-  maxScore = Number(this.value);
+  maxScore = Number(this.value);  //Value of the input must be a number to compare a number with a number
   reset();
 })
